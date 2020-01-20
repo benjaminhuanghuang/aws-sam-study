@@ -59,7 +59,7 @@ Test
   cd clock
   npm init -y
 
-  npm i -S moment
+  npm i -S moment    # build will use the package installed
 ```
 
 ## Build and Deploy

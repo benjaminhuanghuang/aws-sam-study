@@ -24,7 +24,7 @@ Resources:
   ClockFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://ben-s3-study/df08583da33213a3bd9bc5e992cead34
+      CodeUri: s3://ben-s3-study/b980247b10660445b45ad6fb374a5dd3
       Handler: handler.clock
       Runtime: nodejs12.x
       Events:
@@ -36,7 +36,7 @@ Resources:
   ConvertTimeFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://ben-s3-study/e4c0914058e2bf9249344edacd45b800
+      CodeUri: s3://ben-s3-study/0914af1ade72299d9365fb35c8524ec5
       Handler: handler.convertTime
       Runtime: nodejs12.x
       Events:

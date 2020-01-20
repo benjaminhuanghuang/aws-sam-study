@@ -23,7 +23,18 @@ Resources:
           Properties:
             Path: /hello
             Method: get
-
+  ClockFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: clock/    # folder of the handler
+      Handler: handler.clock  
+      Runtime: nodejs12.x
+      Events:
+        ClockApi:
+          Type: Api
+          Properties:
+            Path: /clock
+            Method: get
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
   # Find out more about other implicit resources you can reference within SAM

@@ -33,6 +33,18 @@ Resources:
           Properties:
             Path: /clock
             Method: get
+  ConvertTimeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://ben-s3-study/e4c0914058e2bf9249344edacd45b800
+      Handler: handler.convertTime
+      Runtime: nodejs12.x
+      Events:
+        ConvertTimeApi:
+          Type: Api
+          Properties:
+            Path: /convert-time
+            Method: get
 Outputs:
   HelloWorldApi:
     Description: API Gateway endpoint URL for Prod stage for Hello World function

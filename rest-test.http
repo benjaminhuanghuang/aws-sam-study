@@ -1,2 +1,13 @@
 ###
 https://dbhe7lskp5.execute-api.us-west-2.amazonaws.com/Prod/clock
+
+
+###
+https://dbhe7lskp5.execute-api.us-west-2.amazonaws.com/Prod/convert-time
+
+
+###
+https://dbhe7lskp5.execute-api.us-west-2.amazonaws.com/Prod/convert-time?tz=America/New_York
+
+###
+https://dbhe7lskp5.execute-api.us-west-2.amazonaws.com/Prod/convert-time?tz=Eurpoe/Helsinki

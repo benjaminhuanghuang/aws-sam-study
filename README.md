@@ -79,10 +79,16 @@ Create package with package.yml and upload code to S3 bucket
 
 Deploy to CloudFormation
 ```
-sam deploy --region us-west-2 --capabilities CAPABILITY_IAM --template-file package.yml --stack-name ben-sam-app-stack
+  sam deploy --region us-west-2 --capabilities CAPABILITY_IAM --template-file package.yml --stack-name ben-sam-app-stack
 ```
 
 Check log
 ```
   sam logs --region us-west-2 --name ClockFunction --stack-name ben-sam-app-stack 
+```
+
+
+## Clean Up
+```
+  aws cloudformation delete-stack --stack-name ben-sam-app-stack 
 ```
